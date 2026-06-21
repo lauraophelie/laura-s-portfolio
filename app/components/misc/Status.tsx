@@ -1,6 +1,8 @@
 function GetCVButton() {
     return (
-        <button className="status--get-button">See my CV</button>
+        <button className="status--get-button">
+            See my CV
+        </button>
     )
 }
 

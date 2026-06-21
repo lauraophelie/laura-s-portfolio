@@ -20,10 +20,12 @@
 
     &--get-button {
         border: 1px solid palette.$black-color;
-        padding: 10px 25px;
+        padding: 10px 30px;
         transform: translateY(10px);
         font-size: 20px;
         font-weight: 500;
         background-image: linear-gradient(#F2F9FF, #DEE2F2, #6256A3, #362487);
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
     }
 }
