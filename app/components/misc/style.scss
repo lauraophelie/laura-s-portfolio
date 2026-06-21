@@ -7,3 +7,22 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+.status {
+    background-color: palette.$light-blue-color;
+    color: palette.$black-color;
+    padding: 50px;
+
+    &__text {
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    &--get-button {
+        border: 1px solid palette.$black-color;
+        padding: 10px 25px;
+        transform: translateY(10px);
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
