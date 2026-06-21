@@ -14,6 +14,16 @@
     &__main {
         &--title {
             font-size: 85px;
+            font-weight: 300;
+
+            &__cursive {
+                @include typo.use-pf-champion-font(90px);
+                color: palette.$brighter-blue;
+            }
+            &__bold {
+                @include typo.use-vivala-black-font(70px);
+                color: palette.$yellow-color;
+            }
         }
         &--label {
             font-size: 16px;

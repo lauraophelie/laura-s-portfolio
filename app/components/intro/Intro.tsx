@@ -8,6 +8,14 @@ function IntroLabel() {
     )
 }
 
+function IntroTitle() {
+    return (
+        <h1 className="intro__main--title">
+            Portfolio
+        </h1>
+    )
+}
+
 export default function Intro() {
     return (
         <div className="col-span-2 row-span-2 flex flex-col intro home-page__box">
@@ -17,9 +25,7 @@ export default function Intro() {
             </div>
 
             <div className="intro__main">
-                <h1 className="intro__main--title">
-                    Portfolio
-                </h1>
+                <IntroTitle />
                 <IntroLabel />
             </div>
         </div>
