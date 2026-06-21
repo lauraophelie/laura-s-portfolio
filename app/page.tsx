@@ -1,9 +1,10 @@
-import Image from "next/image";
+import "./styles/pages/home.scss";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    // <div className="flex flex-col flex-1 items-center justify-center  font-sans"></div>
+    <div className="flex flex-col flex-1 items-center justify-center py-2 px-2">
+      {/* <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -59,6 +60,16 @@ export default function Home() {
             Documentation
           </a>
         </div>
+      </main> */}
+      <main className="grid grid-cols-4 gap-2 w-full h-screen">
+        <div className="bg-blue-500 col-span-2 row-span-2 text-center flex items-center justify-center">box 1</div>
+        <div className="bg-blue-500 col-span-2 text-center flex items-center justify-center">box 2</div>
+        <div className="bg-blue-500 flex items-center justify-center">box 3</div>
+        <div className="bg-blue-500 flex items-center justify-center">box 4</div>
+        <div className="bg-blue-500 col-span-2 row-span-2 flex items-center justify-center">box 5</div>
+        <div className="bg-blue-500 flex items-center justify-center">box 6</div>
+        <div className="bg-blue-500 flex items-center justify-center">box 7</div>
+        <div className="bg-blue-500 col-span-2 flex items-center justify-center">box 8</div>
       </main>
     </div>
   );
