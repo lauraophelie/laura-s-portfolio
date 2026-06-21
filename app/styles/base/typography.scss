@@ -22,14 +22,14 @@ $vivala-black-font-name: 'Vivala Black', sans-serif;
     font-size: $font-size;
 }
 
-@mixin use-sora-font($font-size, $font-weight) {
+@mixin use-sora-font($font-size, $font-weight: 400) {
     @include use-custom-font($sora-font-name, $font-size, $font-weight);
 }
 
-@mixin use-pf-champion-font($font-size, $font-weight) {
+@mixin use-pf-champion-font($font-size, $font-weight: 400) {
     @include use-custom-font($pf-champion-font-name, $font-size, $font-weight);
 }
 
-@mixin use-vivala-black-font($font-size, $font-weight) {
+@mixin use-vivala-black-font($font-size, $font-weight: 400) {
     @include use-custom-font($vivala-black-font-name, $font-size, $font-weight);
 }
