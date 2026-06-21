@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Laura Ophélie's portfolio",
+  title: "Laura Ophélie's Portfolio",
   description: "Designed and Coded by Laura Ophélie",
 };
 
