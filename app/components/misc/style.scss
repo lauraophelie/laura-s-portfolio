@@ -1,0 +1,38 @@
+@use "../../styles/base/palette.scss" as palette;
+@use "../../styles/base/typography.scss" as typo;
+
+.copyright {
+    background-color: palette.$yellow-color;
+    color: palette.$black-color;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.status {
+    background-color: palette.$light-blue-color;
+    color: palette.$black-color;
+    padding: 50px;
+
+    &__text {
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    &--get-button {
+        border: 1px solid palette.$black-color;
+        padding: 10px 30px;
+        transform: translateY(10px);
+        font-size: 20px;
+        font-weight: 500;
+        background-image: linear-gradient(#F2F9FF, #DEE2F2, #6256A3, #362487);
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+.process {
+    background-color: palette.$blueish-color;
+    color: palette.$light-blue-color;
+    text-transform: uppercase;
+    font-weight: 500;
+}

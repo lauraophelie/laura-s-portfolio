@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+$sora-font-name: 'Sora', sans-serif;
+$pf-champion-font-name: 'PF Champion Script', sans-serif;
+$vivala-black-font-name: 'Vivala Black', sans-serif;
+
+@font-face {
+    font-family: $pf-champion-font-name;
+    src: url("../../../assets/fonts/PFChampionScriptPro-Reg-subset.otf");
+}
+
+@font-face {
+    font-family:$vivala-black-font-name ;
+    src: url("../../../assets/fonts/VivalaBlack-Bold.ttf");
+}
+
+@mixin use-custom-font($font-name, $font-size, $font-weight: 400) {
+    font-family: $font-name;
+    font-optical-sizing: auto;
+    font-weight: $font-weight;
+    font-style: normal;
+    font-size: $font-size;
+}
+
+@mixin use-sora-font($font-size, $font-weight: 400) {
+    @include use-custom-font($sora-font-name, $font-size, $font-weight);
+}
+
+@mixin use-pf-champion-font($font-size, $font-weight: 400) {
+    @include use-custom-font($pf-champion-font-name, $font-size, $font-weight);
+}
+
+@mixin use-vivala-black-font($font-size, $font-weight: 400) {
+    @include use-custom-font($vivala-black-font-name, $font-size, $font-weight);
+}

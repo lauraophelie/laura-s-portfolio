@@ -1,0 +1,10 @@
+@use "../../styles/base/typography.scss" as typo;
+@use "../../styles/base/mixin.scss" as mixin;
+
+.home-page {
+    @include typo.use-sora-font(25px);
+
+    &__box {
+        @include mixin.basic-border-style-box;
+    }
+}
