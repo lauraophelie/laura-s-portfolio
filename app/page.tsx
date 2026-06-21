@@ -1,4 +1,5 @@
 import Copyright from "./components/misc/Copyright";
+import Process from "./components/misc/Process";
 import Status from "./components/misc/Status";
 import "./styles/pages/home.scss";
 
@@ -12,7 +13,7 @@ export default function Home() {
         <div className="bg-blue-500 flex items-center justify-center">box 4</div>
         <div className="bg-blue-500 col-span-2 row-span-2 flex items-center justify-center">box 5</div>
         <Status />
-        <div className="bg-blue-500 flex items-center justify-center">box 7</div>
+        <Process />
         <Copyright />
       </main>
     </div>

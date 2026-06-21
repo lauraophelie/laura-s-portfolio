@@ -29,3 +29,10 @@
         transition: 0.2s ease-in-out;
     }
 }
+
+.process {
+    background-color: palette.$blueish-color;
+    color: palette.$light-blue-color;
+    text-transform: uppercase;
+    font-weight: 500;
+}
