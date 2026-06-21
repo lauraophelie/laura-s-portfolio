@@ -1,4 +1,3 @@
-import Image from "next/image";
 import "./styles/pages/home.scss";
 
 export default function Home() {
@@ -61,6 +60,16 @@ export default function Home() {
           </a>
         </div>
       </main> */}
+      <main className="grid grid-cols-4 gap-4">
+        <div className="w-40 h-48 bg-blue-500">box</div>
+        <div className="w-40 h-48 bg-blue-500">box</div>
+        <div className="w-40 h-48 bg-blue-500">box</div>
+        <div className="w-40 h-48 bg-blue-500">box</div>
+        <div className="w-40 h-48 bg-blue-500">box</div>
+        <div className="w-40 h-48 bg-blue-500">box</div>
+        <div className="w-40 h-48 bg-blue-500">box</div>
+        <div className="w-40 h-48 bg-blue-500">box</div>
+      </main>
     </div>
   );
 }
