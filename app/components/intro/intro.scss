@@ -1,0 +1,17 @@
+@use "../../styles/base/palette.scss" as palette;
+@use "../../styles/base/typography.scss" as typo;
+
+.intro {
+    padding: 15px 25px;
+    color: palette.$black-color;
+    background-color: palette.$light-blue-color;
+
+    &__welcoming {
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    &__main-title {
+        font-size: 85px;
+    }
+}
