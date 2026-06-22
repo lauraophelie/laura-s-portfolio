@@ -11,7 +11,8 @@ function IntroLabel() {
 function IntroTitle() {
     return (
         <h1 className="intro__main--title">
-            Portfolio
+            <span className="intro__main--title__cursive">P</span>
+            ort<span className="intro__main--title__cursive">f</span>oli<span className="intro__main--title__bold">o</span>
         </h1>
     )
 }
@@ -24,9 +25,20 @@ export default function Intro() {
                 <p className="intro__welcoming__text">Welcome to my,</p>
             </div>
 
-            <div className="intro__main">
+            <div className="intro__main flex flex-col">
                 <IntroTitle />
                 <IntroLabel />
+            </div>
+
+            <div className="intro__links flex flex-row justify-between">
+                <div className="intro__links__content">
+                    <p>Github</p>
+                    <p>LinkedIn</p>
+                </div>
+                <div className="intro__links__content">
+                    <p>Email/</p>
+                    <p>lauraophelie1@gmail.com</p>
+                </div>
             </div>
         </div>
     )

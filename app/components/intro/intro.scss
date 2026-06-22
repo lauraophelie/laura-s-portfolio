@@ -9,12 +9,15 @@
     &__welcoming {
         text-transform: uppercase;
         font-size: 18px;
+        font-weight: 500;
     }
 
     &__main {
         &--title {
             font-size: 85px;
             font-weight: 300;
+            -webkit-text-stroke: 0.5px palette.$grey-color;
+            transform: translateY(25%);
 
             &__cursive {
                 @include typo.use-pf-champion-font(90px);
@@ -35,5 +38,12 @@
             width: 80px;
             background-image: linear-gradient(#FFFFFF, #FAF7BB, #FCF253, #FFF100);
         }
+    }
+
+    &__links {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 500;
+        transform: translateY(35px);
     }
 }
