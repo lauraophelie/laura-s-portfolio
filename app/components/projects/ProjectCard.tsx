@@ -1,4 +1,5 @@
 import "./projects.scss";
+import { ArrowRightCircle } from "@deemlol/next-icons"
 
 interface ProjectCardProps {
     title: string;

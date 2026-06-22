@@ -8,7 +8,7 @@ export default function Projects() {
             <div className="projects__row flex flex-col">
                 <ProjectCard 
                     title={"Project title"} 
-                    techstack={"Tech stack, Tech stack"} 
+                    techstack={"Tech stack, Tech stack, Tech stack"} 
                 />
             </div>
         </div>
