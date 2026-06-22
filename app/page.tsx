@@ -2,6 +2,7 @@ import Intro from "./components/intro/Intro";
 import Copyright from "./components/misc/Copyright";
 import Process from "./components/misc/Process";
 import Status from "./components/misc/Status";
+import Projects from "./components/projects/Projects";
 import "./styles/pages/home.scss";
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
         <div className="bg-blue-500 col-span-2 text-center flex items-center justify-center">box 2</div>
         <div className="bg-blue-500 flex items-center justify-center">box 3</div>
         <div className="bg-blue-500 flex items-center justify-center">box 4</div>
-        <div className="bg-blue-500 col-span-2 row-span-2 flex items-center justify-center">box 5</div>
+        <Projects />
         <Status />
         <Process />
         <Copyright />
