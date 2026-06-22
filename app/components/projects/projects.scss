@@ -15,19 +15,22 @@
         &__cards {
             @include mixin.basic-border-style-box;
             width: 225px;
-            // height: 190px;
             padding: 25px 20px;
             background-image: linear-gradient(#FFFFFF, #BEDCFA, #ACD3FA, #85C2FF);
+            cursor: pointer;
 
             &--title {
                 font-size: 32px;
                 font-weight: 500;
                 line-height: 40px;
             }
-
             &--stack {
                 font-size: 14px;
                 font-weight: 300;
+            }
+            &--arrow {
+                text-align: right;
+                transform: translateX(125px);
             }
         }
     }

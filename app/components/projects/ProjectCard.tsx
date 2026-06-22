@@ -15,6 +15,13 @@ export default function ProjectCard({title, techstack} : ProjectCardProps) {
             <p className="projects__row__cards--stack">
                 {techstack}
             </p>
+            <ArrowRightCircle 
+                size={50} 
+                fill="true" 
+                color="#85C2FF" 
+                strokeWidth={0.5}
+                className="projects__row__cards--arrow"
+            />
         </div>
     )
 }
