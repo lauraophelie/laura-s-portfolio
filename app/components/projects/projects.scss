@@ -1,0 +1,22 @@
+@use "../../styles/base/palette.scss" as palette;
+@use "../../styles/base/mixin.scss" as mixin;
+
+.projects {
+    background-color: palette.$light-blue-color;
+    color: palette.$black-color;
+    padding: 20px;
+
+    &__title {
+        font-size: 54px;
+        font-weight: 300;
+    }
+
+    &__row {
+        &__cards {
+            @include mixin.basic-border-style-box;
+            width: 225px;
+            height: 190px;
+            padding: 20px;
+        }
+    }
+}
