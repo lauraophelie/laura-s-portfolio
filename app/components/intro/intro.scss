@@ -49,8 +49,8 @@
         transform: translateY(35px);
 
         &__content {
-            &--left {
-                text-align: left;
+            &--right {
+                text-align: right;
             }
         }
     }
@@ -78,6 +78,10 @@
                 width: 70px;
                 transform: translateX(50%)
             }
+        }
+        &__links {
+            transform: translateY(0);
+            padding-top: 25px;
         }
     }
 }

@@ -35,7 +35,7 @@ export default function Intro() {
                     <p>Github</p>
                     <p>LinkedIn</p>
                 </div>
-                <div className="intro__links__content intro__links__content--left">
+                <div className="intro__links__content intro__links__content--right">
                     <p>Email/</p>
                     <p>lauraophelie1@gmail.com</p>
                 </div>
