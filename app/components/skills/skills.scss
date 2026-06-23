@@ -6,5 +6,12 @@
     padding: 20px;
     font-size: 22px;
     text-transform: uppercase;
+    font-weight: 500;
     cursor: pointer
+}
+
+@media screen and (max-width: 640px) {
+    .skills {
+        font-size: 20px;
+    }
 }

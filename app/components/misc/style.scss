@@ -36,3 +36,21 @@
     text-transform: uppercase;
     font-weight: 500;
 }
+
+@media screen and (max-width: 640px) {
+    .status, .process {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .status {
+        &--get-button {
+            font-size: 16px;
+            transform: translateY(0);
+        }
+    }
+    .copyright {
+        font-size: 16px;
+        padding: 20px;
+    }
+}

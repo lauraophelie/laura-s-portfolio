@@ -8,3 +8,11 @@
         @include mixin.basic-border-style-box;
     }
 }
+
+@media screen and (max-width: 640px) { 
+    .home-page {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}

@@ -28,15 +28,8 @@ const projectsData: Project[] = [
 export default function Projects() {
     return (
         <div className="col-span-2 row-span-2 flex flex-col projects home-page__box">
-            {/* <h1 className="projects__title">Projects</h1>
+            <h1 className="projects__title">Projects</h1>
             <div className="projects__row flex flex-row gap-4">
-                { {projectsData.map((project, index) => (
-                    <ProjectCard 
-                        key={project.title + index}
-                        title={project.title} 
-                        techstack={project.techstack} 
-                    />
-                ))} }
                 <ProjectCard 
                     title={"Project title"} 
                     techstack={"Tech stack, Tech stack, Tech stack"} 
@@ -49,7 +42,7 @@ export default function Projects() {
                     title={"Project title"} 
                     techstack={"Tech stack, Tech stack, Tech stack"} 
                 />
-            </div> */}
+            </div>
         </div>
     )
 }
