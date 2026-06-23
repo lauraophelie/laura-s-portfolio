@@ -20,7 +20,7 @@ function IntroTitle() {
 export default function Intro() {
     return (
         <div className="col-span-2 row-span-2 flex flex-col intro home-page__box">
-            <div className="intro__welcoming flex flex-row justify-between gap-5">
+            {/* <div className="intro__welcoming flex flex-row justify-between gap-5">
                 <p className="intro__welcoming__text">Hi there☀️</p>
                 <p className="intro__welcoming__text">Welcome to my,</p>
             </div>
@@ -39,7 +39,7 @@ export default function Intro() {
                     <p>Email/</p>
                     <p>lauraophelie1@gmail.com</p>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
