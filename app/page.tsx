@@ -1,4 +1,5 @@
 import AboutMe from "./components/about/AboutMe";
+import Background from "./components/background/Background";
 import Intro from "./components/intro/Intro";
 import Copyright from "./components/misc/Copyright";
 import Process from "./components/misc/Process";
@@ -14,7 +15,7 @@ export default function Home() {
         <Intro />
         <AboutMe />
         <Skills />
-        <div className="bg-blue-500 flex items-center justify-center">box 4</div>
+        <Background />
         <Projects />
         <Status />
         <Process />
