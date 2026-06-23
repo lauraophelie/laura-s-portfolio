@@ -1,0 +1,10 @@
+@use "../../styles/base/palette.scss" as palette;
+
+.skills {
+    background-color: palette.$blueish-color;
+    color: palette.$white-color;
+    padding: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    cursor: pointer
+}
