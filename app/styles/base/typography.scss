@@ -6,12 +6,12 @@ $vivala-black-font-name: 'Vivala Black', sans-serif;
 
 @font-face {
     font-family: $pf-champion-font-name;
-    src: url("../../../assets/fonts/PFChampionScriptPro-Reg-subset.otf");
+    src: url("./fonts/PFChampionScriptPro-Reg-subset.otf") format('otf');
 }
 
 @font-face {
     font-family:$vivala-black-font-name ;
-    src: url("../../../assets/fonts/VivalaBlack-Bold.ttf");
+    src: url("./fonts/VivalaBlack-Bold.ttf") format('ttf');
 }
 
 @mixin use-custom-font($font-name, $font-size, $font-weight: 400) {
