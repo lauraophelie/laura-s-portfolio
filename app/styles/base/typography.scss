@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
-$sora-font-name: 'Sora', sans-serif;
+$sora-font-name: 'Sora';
 $pf-champion-font-name: 'PF Champion Script Pro';
 $vivala-black-font-name: 'Vivala Black';
 
@@ -14,7 +14,7 @@ $vivala-black-font-name: 'Vivala Black';
 
 @font-face {
     font-family: $vivala-black-font-name;
-    src: url("./fonts/VivalaBlack-Bold.ttf") format('ttf');
+    src: url("./fonts/VivalaBlack-Bold.woff") format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
