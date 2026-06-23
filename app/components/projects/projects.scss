@@ -35,3 +35,19 @@
         }
     }
 }
+
+@media screen and (max-width: 640px) {
+    .projects {
+        &__title {
+            font-size: 50px;
+        }
+        &__row {
+            display: flex;
+            flex-direction: column;
+
+            &__cards {
+                display: none;
+            }
+        }
+    }
+}
