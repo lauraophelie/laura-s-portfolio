@@ -18,6 +18,7 @@
             font-weight: 300;
             -webkit-text-stroke: 0.5px palette.$grey-color;
             transform: translateY(25%);
+            text-align: center;
 
             &__cursive {
                 @include typo.use-pf-champion-font(90px);
@@ -37,6 +38,7 @@
             padding: 5px 20px;
             width: 80px;
             background-image: linear-gradient(#FFFFFF, #FAF7BB, #FCF253, #FFF100);
+            transform: translateX(35vh);
         }
     }
 
