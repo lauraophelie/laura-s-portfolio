@@ -11,7 +11,7 @@ const infos = {
 export default function AboutMe() {
     return (
         <div className="col-span-2 flex about-me home-page__box">
-            {/* I am {infos.name} / {infos.title} / {infos.study} / {infos.location} / {infos.motiv} */}
+            I am {infos.name} / {infos.title} / {infos.study} / {infos.location} / {infos.motiv}
         </div>
     )
 }
