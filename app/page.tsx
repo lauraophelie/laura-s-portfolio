@@ -18,7 +18,6 @@ export default function Home() {
         w-full h-screen 
         py-2 px-2 
         home-page
-        md:grid-cols-2
       "
     >
       <Intro />
