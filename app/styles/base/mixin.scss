@@ -6,6 +6,7 @@
 }
 
 @mixin basic-popup-style {
+    @include basic-border-style-box;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,4 +14,11 @@
     z-index: 1;
     padding: 35px;
     justify-content: center;
+}
+
+@mixin basic-popup-style-mobile {
+    width: fit-content;
+    top: 0;
+    left: 0;
+    transform: translate(0);
 }

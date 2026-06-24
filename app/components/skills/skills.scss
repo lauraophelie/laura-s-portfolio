@@ -12,7 +12,6 @@
 
     &__popup {
         @include mixin.basic-popup-style;
-        @include mixin.basic-border-style-box;
         background-color: palette.$blueish-color;
         color: palette.$white-color;
         width: 95vh;
@@ -43,10 +42,7 @@
         font-size: 20px;
 
         &__popup {
-            width: fit-content;
-            top: 0;
-            left: 0;
-            transform: translate(0);
+            @include mixin.basic-popup-style-mobile;
 
             &__details {
                 &--title {

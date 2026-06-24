@@ -1,4 +1,5 @@
 @use "../../styles/base/palette.scss" as palette;
+@use "../../styles/base/mixin.scss" as mixin;
 
 .background {
     background-color: palette.$yellow-color;
@@ -7,10 +8,27 @@
     font-size: 26px;
     font-weight: 500;
     padding: 20px;
+    cursor: pointer;
+
+    &__popup {
+        @include mixin.basic-popup-style;
+        background-color: palette.$yellow-color;
+        color: palette.$black-color;
+
+        &__header {
+            content: "x";
+            text-align: right;
+            font-weight: 500;
+        }
+    }
 }
 
 @media screen and (max-width: 640px) {
     .background {
         font-size: 24px;
+
+        &__popup {
+            @include mixin.basic-popup-style-mobile;
+        }
     }
 }
