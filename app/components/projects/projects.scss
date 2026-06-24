@@ -7,30 +7,37 @@
     padding: 20px;
 
     &__title {
-        font-size: 54px;
+        font-size: 52px;
         font-weight: 300;
     }
 
     &__row {
         &__cards {
             @include mixin.basic-border-style-box;
-            width: 225px;
-            padding: 25px 20px;
+            padding: 25px 25px;
             background-image: linear-gradient(#FFFFFF, #BEDCFA, #ACD3FA, #85C2FF);
-            cursor: pointer;
 
             &--title {
-                font-size: 32px;
+                font-size: 30px;
                 font-weight: 500;
                 line-height: 40px;
             }
-            &--stack {
-                font-size: 14px;
+            &--description {
+                font-size: 12px;
                 font-weight: 300;
+                padding-top: 5px;
             }
-            &--arrow {
+            &--stack {
+                font-size: 12px;
+                font-weight: 500;
+                padding-top: 10px;
+            }
+            &--view {
+                text-decoration: underline;
+                font-size: 13px;
+                font-weight: 500;
+                padding-top: 50px;
                 text-align: right;
-                transform: translateX(125px);
             }
         }
     }

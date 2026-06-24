@@ -2,7 +2,7 @@
 @use "../../styles/base/mixin.scss" as mixin;
 
 .background {
-    background-color: palette.$yellow-color;
+    background-image: linear-gradient(#FFF100, #EEE43E, #F0E640, #F2ED95);
     color: palette.$black-color;
     text-transform: uppercase;
     font-size: 26px;
