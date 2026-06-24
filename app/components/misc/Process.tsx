@@ -19,7 +19,7 @@ export default function Process() {
             }
 
             p.draw = () => {
-                p.background("#362487");
+                p.background("#36248700");
 
                 const leftX = p.width * 0.4;
                 const leftY = p.height * 0.5;

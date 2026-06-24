@@ -53,7 +53,8 @@
             flex-direction: column;
 
             &__cards {
-                display: none;
+                display: flex;
+                flex-direction: column;
             }
         }
     }
