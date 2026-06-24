@@ -17,7 +17,9 @@ export default function Skills() {
             <p>Tools</p>
 
         {isPopupOpen && (
-            <SkillsPopup />
+            <SkillsPopup 
+                onClose={() => setIsPopupOpen(false)}
+            />
         )}
         </div>
     )

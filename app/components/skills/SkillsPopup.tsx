@@ -23,9 +23,25 @@ const skillsData = [
     }
 ]
 
-export default function SkillsPopup() {
+interface SkillsPopupProps {
+    isOpen?: boolean;
+    onClose: () => void
+}
+
+export default function SkillsPopup({ onClose } : SkillsPopupProps ) {
+    const handleClose = (e: { stopPropagation: () => void; }) => {
+        e.stopPropagation();
+        onClose()
+    }
+
     return (
         <div className="skills__popup flex flex-col gap-5">
+            <div 
+                className="skills__popup__header"
+                onClick={handleClose}
+            >
+                x
+            </div>
             {skillsData.map((skill, index) => (
                 <div className="skills__popup__details" key={index}>
                     <p className="skills__popup__details--title"> 

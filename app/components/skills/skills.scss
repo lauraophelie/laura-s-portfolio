@@ -17,9 +17,13 @@
         color: palette.$white-color;
         width: 95vh;
 
-        &__details {
-            text-align: left;
+        &__header {
+            content: "x";
+            text-align: right;
+            font-weight: 500;
+        }
 
+        &__details {
             &--title {
                 font-size: 24px;
                 font-weight: 500;
