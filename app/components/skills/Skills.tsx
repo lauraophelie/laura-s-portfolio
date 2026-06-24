@@ -1,4 +1,5 @@
 import "./skills.scss";
+import SkillsPopup from "./SkillsPopup";
 
 export default function Skills() {
     return (
@@ -7,6 +8,8 @@ export default function Skills() {
             <p>Frameworks</p>
             <p>Databases</p>
             <p>Tools</p>
+
+            <SkillsPopup />
         </div>
     )
 }
