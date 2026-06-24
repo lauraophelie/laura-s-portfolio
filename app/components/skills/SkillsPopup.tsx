@@ -1,4 +1,6 @@
+import Draggable from "react-draggable";
 import "./skills.scss";
+import { useRef } from "react";
 
 const skillsData = [
     {
@@ -33,25 +35,28 @@ export default function SkillsPopup({ onClose } : SkillsPopupProps ) {
         e.stopPropagation();
         onClose()
     }
+    const nodeRef = useRef(null);
 
     return (
-        <div className="skills__popup flex flex-col gap-5">
-            <div 
-                className="skills__popup__header"
-                onClick={handleClose}
-            >
-                x
-            </div>
-            {skillsData.map((skill, index) => (
-                <div className="skills__popup__details" key={index}>
-                    <p className="skills__popup__details--title"> 
-                        {skill.title}
-                    </p>
-                    <p className="skills__popup__details--content">
-                        {skill.content}
-                    </p>
+        <Draggable nodeRef={nodeRef}>
+            <div className="skills__popup flex flex-col gap-5" ref={nodeRef}>
+                <div 
+                    className="skills__popup__header"
+                    onClick={handleClose}
+                >
+                    x
                 </div>
-            ))}
-        </div>
+                {skillsData.map((skill, index) => (
+                    <div className="skills__popup__details" key={index}>
+                        <p className="skills__popup__details--title"> 
+                            {skill.title}
+                        </p>
+                        <p className="skills__popup__details--content">
+                            {skill.content}
+                        </p>
+                    </div>
+                ))}
+            </div>
+        </Draggable>
     )
 }
