@@ -12,14 +12,17 @@
 
     &__popup {
         @include mixin.basic-popup-style;
-        @include mixin.basic-border-style-box;
         background-color: palette.$blueish-color;
         color: palette.$white-color;
         width: 95vh;
 
-        &__details {
-            text-align: left;
+        &__header {
+            content: "x";
+            text-align: right;
+            font-weight: 500;
+        }
 
+        &__details {
             &--title {
                 font-size: 24px;
                 font-weight: 500;
@@ -37,5 +40,18 @@
 @media screen and (max-width: 640px) {
     .skills {
         font-size: 20px;
+
+        &__popup {
+            @include mixin.basic-popup-style-mobile;
+
+            &__details {
+                &--title {
+                    font-size: 22px;
+                }
+                &--content {
+                    font-size: 16px;
+                }
+            }
+        }
     }
 }

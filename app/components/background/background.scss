@@ -1,4 +1,5 @@
 @use "../../styles/base/palette.scss" as palette;
+@use "../../styles/base/mixin.scss" as mixin;
 
 .background {
     background-color: palette.$yellow-color;
@@ -7,10 +8,72 @@
     font-size: 26px;
     font-weight: 500;
     padding: 20px;
+    cursor: pointer;
+
+    &__popup {
+        @include mixin.basic-popup-style;
+        background-color: palette.$yellow-color;
+        color: palette.$black-color;
+
+        &__header {
+            content: "x";
+            text-align: right;
+            font-weight: 500;
+            transition: 0.3s ease-in-out;
+        }
+
+        &__title {
+            font-weight: 500;
+            font-size: 7vh;
+            text-transform: capitalize;
+        }
+
+        &__details {
+            &__box {
+                padding: 5px;
+            }
+
+            &--title {
+                font-size: 24px;
+                font-weight: 500;
+            }
+            &--instit {
+                font-size: 22px;
+                font-weight: 300;
+            }
+            &--timeline {
+                font-size: 24px;
+                font-weight: 400;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 640px) {
     .background {
         font-size: 24px;
+
+        &__popup {
+            @include mixin.basic-popup-style-mobile;
+
+            &__details {
+                &__box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2;
+                    padding-top: 10px;
+                }
+
+                &--title {
+                    font-size: 22px;
+                }
+                &--instit {
+                    font-size: 20px;
+                }
+                &--timeline {
+                    font-size: 22px;
+                }
+            }
+        }
     }
 }
