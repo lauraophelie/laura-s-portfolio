@@ -27,13 +27,13 @@ const skillsData = [
 
 interface SkillsPopupProps {
     isOpen?: boolean;
-    onClose: () => void
+    onClose: () => void;
 }
 
 export default function SkillsPopup({ onClose } : SkillsPopupProps ) {
     const handleClose = (e: { stopPropagation: () => void; }) => {
         e.stopPropagation();
-        onClose()
+        onClose();
     }
     const nodeRef = useRef(null);
 
