@@ -27,7 +27,11 @@
         font-weight: 500;
         background-image: linear-gradient(#F2F9FF, #DEE2F2, #6256A3, #362487);
         cursor: pointer;
-        transition: 0.2s ease-in-out;
+        transition: 0.3s ease-in-out;
+
+        a {
+            text-decoration: none;
+        }
     }
 }
 

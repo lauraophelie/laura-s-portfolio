@@ -4,44 +4,45 @@ interface Project {
     title: string;
     techstack: string;
     githubLink: string;
+    description?: string;
     status?: string;
 }
 
 const projectsData: Project[] = [
     {
-        title: "Study café",
-        techstack: "Python",
-        githubLink: "https://github.com/lauraophelie/study-cafe-py-app"
+        title: "Study café App",
+        techstack: "Python, Aseprite",
+        githubLink: "https://github.com/lauraophelie/study-cafe-py-app",
+        description: "A pixel game inspired python application in which you can study and interact with other friend; built using pygame, socket & tkinter"
     },
     {
-        title: "Services exchange",
-        techstack: "Spring Boot, PostgreSQL",
-        githubLink: "https://github.com/lauraophelie/servicesechanges"
+        title: "Classification Titanic",
+        techstack: "Python, Jupyter Notebook",
+        githubLink: "https://github.com/lauraophelie/classification-titanic-tp",
+        description: "A machine learning exercise using classification to build, visualize, evaluate a Decision Tree and a Random Forest from a dataset about the Titanic."
     },
     {
         title: "Document signature",
-        techstack: "Django, HTML",
-        githubLink: "https://github.com/lauraophelie/crypto-document-signature"
+        techstack: "Django, HTML, Jupyter Notebook",
+        githubLink: "https://github.com/lauraophelie/crypto-document-signature",
+        description: "A django web application made to upload and sign documents using RSA cryptography"
     }
 ]
 
 export default function Projects() {
     return (
         <div className="col-span-2 row-span-2 flex flex-col projects home-page__box">
-            <h1 className="projects__title">Projects</h1>
-            <div className="projects__row flex flex-row gap-4">
-                <ProjectCard 
-                    title={"Project title"} 
-                    techstack={"Tech stack, Tech stack, Tech stack"} 
-                />
-                <ProjectCard 
-                    title={"Project title"} 
-                    techstack={"Tech stack, Tech stack, Tech stack"} 
-                />
-                <ProjectCard 
-                    title={"Project title"} 
-                    techstack={"Tech stack, Tech stack, Tech stack"} 
-                />
+            <h1 className="projects__title">Selected Projects</h1>
+            <div className="projects__row flex flex-1 flex-row gap-2">
+                {projectsData.map((project, index) => (
+                    <ProjectCard 
+                        key={index}
+                        title={project.title}
+                        techstack={project.techstack} 
+                        githubLink={project.githubLink}  
+                        description={project.description}              
+                    />
+                ))}
             </div>
         </div>
     )
