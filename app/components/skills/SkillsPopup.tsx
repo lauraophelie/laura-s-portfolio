@@ -39,7 +39,7 @@ export default function SkillsPopup({ onClose } : SkillsPopupProps ) {
 
     return (
         <Draggable nodeRef={nodeRef}>
-            <div className="skills__popup flex flex-col gap-5" ref={nodeRef}>
+            <div className="skills__popup flex flex-col gap-2" ref={nodeRef}>
                 <div 
                     className="skills__popup__header"
                     onClick={handleClose}

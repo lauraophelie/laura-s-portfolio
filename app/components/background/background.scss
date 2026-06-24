@@ -19,6 +19,32 @@
             content: "x";
             text-align: right;
             font-weight: 500;
+            transition: 0.3s ease-in-out;
+        }
+
+        &__title {
+            font-weight: 500;
+            font-size: 7vh;
+            text-transform: capitalize;
+        }
+
+        &__details {
+            &__box {
+                padding: 5px;
+            }
+
+            &--title {
+                font-size: 24px;
+                font-weight: 500;
+            }
+            &--instit {
+                font-size: 22px;
+                font-weight: 300;
+            }
+            &--timeline {
+                font-size: 24px;
+                font-weight: 400;
+            }
         }
     }
 }
@@ -29,6 +55,25 @@
 
         &__popup {
             @include mixin.basic-popup-style-mobile;
+
+            &__details {
+                &__box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2;
+                    padding-top: 10px;
+                }
+
+                &--title {
+                    font-size: 22px;
+                }
+                &--instit {
+                    font-size: 20px;
+                }
+                &--timeline {
+                    font-size: 22px;
+                }
+            }
         }
     }
 }
