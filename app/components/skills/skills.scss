@@ -11,8 +11,26 @@
     cursor: pointer;
 
     &__popup {
-        background: rgba(0, 0, 0, 0.5);
         @include mixin.basic-popup-style;
+        @include mixin.basic-border-style-box;
+        background-color: palette.$blueish-color;
+        color: palette.$white-color;
+        width: 95vh;
+
+        &__details {
+            text-align: left;
+
+            &--title {
+                font-size: 24px;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+            &--content {
+                font-size: 18px;
+                font-weight: 300;
+                text-transform: capitalize;
+            }
+        }
     }
 }
 
