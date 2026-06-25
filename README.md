@@ -1,6 +1,6 @@
 # Portfolio 2026
 
-My 2026 portfolio, featuring some informations about me, my educational background, my contacts and my side projects.
+My 2026 portfolio, featuring some informations about me, my educational background, my contacts and my side projects. Link here : https://laura-s-portfolio-2026.vercel.app/
 
 ## 📂 Inspiration
 
