@@ -27,12 +27,12 @@ const infos = {
 
 export default function AboutMe() {
     return (
-        <div className="col-span-2 flex flex-col gap-3 about-me home-page__box">
+        <div className="col-span-2 flex flex-col gap-4 about-me home-page__box">
             <h1 className="about-me__title">
                 About me
             </h1>
 
-            <div className="about-me__infos flex flex-col gap-1">
+            <div className="about-me__infos flex flex-col gap">
                 <AboutMeInfo label={"Name"} info={infos.name} />
                 <AboutMeInfo label={"Title"} info={infos.title} />
                 <AboutMeInfo label={"Location"} info={infos.location} />

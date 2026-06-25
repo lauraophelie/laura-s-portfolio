@@ -1,7 +1,8 @@
 @use "../../styles/base/palette.scss" as palette;
 
 .about-me {
-    background-color: palette.$light-blue-color;
+    // background-color: palette.$light-blue-color;
+    background-image: linear-gradient(#F2F9FF, #d6ecfc, #c8e6fd, #b1dcfc);
     color: palette.$black-color;
     padding: 15px 25px;
     text-transform: uppercase;

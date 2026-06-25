@@ -2,11 +2,12 @@
 @use "../../styles/base/mixin.scss" as mixin;
 
 .background {
-    background-image: linear-gradient(#FFF100, #EEE43E, #F0E640, #F2ED95);
+    // background-image: linear-gradient(#FFF100, #EEE43E, #F0E640, #F2ED95);
+    background-color: palette.$brighter-blue;
     color: palette.$black-color;
     font-size: 26px;
     font-weight: 500;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
     text-transform: uppercase;
 
@@ -14,6 +15,7 @@
         @include mixin.basic-popup-style;
         background-color: palette.$light-blue-color;
         color: palette.$black-color;
+
 
         &__header {
             content: "x";
