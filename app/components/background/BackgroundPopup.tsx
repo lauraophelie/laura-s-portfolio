@@ -43,9 +43,8 @@ export default function BackgroundPopup({ onClose } : BackgroundPopupProps ) {
             <div className="background__popup flex flex-col" ref={nodeRef}>
                 <div 
                     className="background__popup__header" 
-                    onClick={handleClosing}
                 >
-                    <p>x</p>
+                    <p onClick={handleClosing} onTouchStart={handleClosing}>x</p>
                 </div>
 
                 <h2 className="background__popup__title">Education</h2>

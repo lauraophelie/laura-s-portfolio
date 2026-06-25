@@ -43,7 +43,13 @@ export default function SkillsPopup({ onClose } : SkillsPopupProps ) {
                 <div 
                     className="skills__popup__header"
                 >
-                    <p className="skills__popup__header--content" onClick={handleClose} onTouchStart={handleClose}>X</p>
+                    <p 
+                        className="skills__popup__header--content" 
+                        onClick={handleClose} 
+                        onTouchStart={handleClose}
+                    >
+                            X
+                    </p>
                 </div>
                 {skillsData.map((skill, index) => (
                     <div className="skills__popup__details" key={index}>

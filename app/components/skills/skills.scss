@@ -45,12 +45,6 @@
         &__popup {
             @include mixin.basic-popup-style-mobile;
 
-            &__header {
-                &--content {
-                    font-size: 35px;
-                }
-            }
-
             &__details {
                 &--title {
                     font-size: 22px;
