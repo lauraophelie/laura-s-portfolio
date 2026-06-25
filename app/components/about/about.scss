@@ -1,17 +1,56 @@
 @use "../../styles/base/palette.scss" as palette;
 
 .about-me {
-    background-color: palette.$brighter-blue;
+    // background-color: palette.$light-blue-color;
+    background-image: linear-gradient(#F2F9FF, #d6ecfc, #c8e6fd, #b1dcfc);
     color: palette.$black-color;
     padding: 15px 25px;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 28px;
+    }
+
+    &__infos {
+        &__box {
+            &__label {
+                font-size: 18px;
+                font-weight: 600;
+            }
+            &__info {
+                font-size: 18px;
+                font-weight: 300;
+                text-transform: initial;
+                text-align: right;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 640px) {
     .about-me {
         font-size: 16px;
+
+        &__text {
+            font-size: 26px;
+        }
+
+        &__infos {
+            &__box {
+
+                &__label {
+                    font-size: 18px;
+                }
+                &__info {
+                    font-size: 16px;
+                    text-align: right;
+                }
+            }
+        }
     }
 }
