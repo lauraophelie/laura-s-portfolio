@@ -6,7 +6,7 @@
     color: palette.$black-color;
     font-size: 18px;
     font-weight: 500;
-    padding: 20px;
+    padding: 25px;
 }
 
 .status {
@@ -17,6 +17,7 @@
     &__text {
         text-transform: uppercase;
         font-weight: 500;
+        font-size: 26px;
     }
 
     &--get-button {

@@ -1,5 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import "./projects.scss";
+
 interface Project {
     title: string;
     techstack: string;
@@ -19,13 +20,13 @@ const projectsData: Project[] = [
         title: "Classification Titanic",
         techstack: "Python, Jupyter Notebook",
         githubLink: "https://github.com/lauraophelie/classification-titanic-tp",
-        description: "A machine learning exercise using classification to build, visualize, evaluate a Decision Tree and a Random Forest from a dataset about the Titanic."
+        description: "A machine learning exercise using classification to visualize, evaluate a Decision Tree and a Random Forest from a dataset."
     },
     {
         title: "Document signature",
         techstack: "Django, HTML, Jupyter Notebook",
         githubLink: "https://github.com/lauraophelie/crypto-document-signature",
-        description: "A django web application made to upload and sign documents using RSA cryptography"
+        description: "A django web application made to upload and sign documents using RSA cryptography using key pairs"
     }
 ]
 
@@ -33,7 +34,7 @@ export default function Projects() {
     return (
         <div className="col-span-2 row-span-2 flex flex-col projects home-page__box">
             <h1 className="projects__title">Selected Projects</h1>
-            <div className="projects__row flex flex-1 flex-row gap-2">
+            <div className="projects__row flex flex-row gap-2">
                 {projectsData.map((project, index) => (
                     <ProjectCard 
                         key={index}

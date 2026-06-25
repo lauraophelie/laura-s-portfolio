@@ -7,8 +7,8 @@
     padding: 20px;
 
     &__title {
-        font-size: 52px;
-        font-weight: 300;
+        font-size: 35px;
+        font-weight: 400;
     }
 
     &__row {
@@ -16,12 +16,12 @@
             @include mixin.basic-border-style-box;
             padding: 25px 25px;
             background-image: linear-gradient(#FFFFFF, #BEDCFA, #ACD3FA, #85C2FF);
-            width: 300px;
+            width: 315px;
 
             &--title {
-                font-size: 30px;
+                font-size: 26px;
                 font-weight: 500;
-                line-height: 40px;
+                line-height: 35px;
             }
             &--description {
                 font-size: 12px;
@@ -35,7 +35,7 @@
             }
             &--view {
                 text-decoration: underline;
-                font-size: 13px;
+                font-size: 12px;
                 font-weight: 500;
                 padding-top: 50px;
                 text-align: right;
