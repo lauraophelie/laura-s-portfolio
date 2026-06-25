@@ -4,15 +4,15 @@
 .background {
     background-image: linear-gradient(#FFF100, #EEE43E, #F0E640, #F2ED95);
     color: palette.$black-color;
-    text-transform: uppercase;
     font-size: 26px;
     font-weight: 500;
-    padding: 20px;
+    padding: 10px;
     cursor: pointer;
+    text-transform: uppercase;
 
     &__popup {
         @include mixin.basic-popup-style;
-        background-color: palette.$yellow-color;
+        background-color: palette.$light-blue-color;
         color: palette.$black-color;
 
         &__header {
@@ -24,26 +24,29 @@
 
         &__title {
             font-weight: 500;
-            font-size: 7vh;
+            font-size: 32px;
             text-transform: capitalize;
         }
 
         &__details {
+            text-transform: initial;
+
             &__box {
-                padding: 5px;
+                padding-top: 20px;
             }
 
             &--title {
-                font-size: 24px;
+                font-size: 22px;
                 font-weight: 500;
             }
             &--instit {
-                font-size: 22px;
+                font-size: 20px;
                 font-weight: 300;
             }
             &--timeline {
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: 400;
+                text-align: right;
             }
         }
     }
@@ -65,13 +68,13 @@
                 }
 
                 &--title {
-                    font-size: 22px;
-                }
-                &--instit {
                     font-size: 20px;
                 }
+                &--instit {
+                    font-size: 18px;
+                }
                 &--timeline {
-                    font-size: 22px;
+                    font-size: 20px;
                 }
             }
         }
