@@ -44,7 +44,7 @@ export default function SkillsPopup({ onClose } : SkillsPopupProps ) {
                     className="skills__popup__header"
                     onClick={handleClose}
                 >
-                    x
+                    <p className="skills__popup__header--content">X</p>
                 </div>
                 {skillsData.map((skill, index) => (
                     <div className="skills__popup__details" key={index}>
