@@ -1,9 +1,11 @@
 # Portfolio 2026
 
+My 2026 portfolio, featuring some informations about me, my educational background, my contacts and my side projects.
+
 ## 📂 Inspiration
 
 ## 📂 Technologies & Tools used 
-- Programming : Next.js + Tailwind CSS, SCSS
+- Programming : Next.js + Tailwind CSS, SCSS, p5.js
 - Prototyping : Adobe XD
 
 ## 📂 How to run the project 
