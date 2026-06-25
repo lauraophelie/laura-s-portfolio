@@ -33,7 +33,7 @@ const projectsData: Project[] = [
 export default function Projects() {
     return (
         <div className="col-span-2 row-span-2 flex flex-col gap-3 projects home-page__box">
-            <div className="projects__texts flex flex-row gap-3 justify-between items-end">
+            <div className="projects__texts flex flex-row gap-3 justify-between items-center">
                 <h1 className="projects__title">Selected Projects</h1>
                 <a href="https://github.com/lauraophelie/" target="_blank" className="projects__texts__link">
                     View all projects →
