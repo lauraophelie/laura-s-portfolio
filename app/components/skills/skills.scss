@@ -12,8 +12,8 @@
 
     &__popup {
         @include mixin.basic-popup-style;
-        background-color: palette.$blueish-color;
-        color: palette.$white-color;
+        background-color: palette.$light-blue-color;
+        color: palette.$black-color;
         width: 95vh;
 
         &__header {
@@ -24,13 +24,15 @@
         }
 
         &__details {
+            padding-top: 25px;
+
             &--title {
-                font-size: 24px;
+                font-size: 22px;
                 font-weight: 500;
                 text-transform: uppercase;
             }
             &--content {
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 300;
                 text-transform: capitalize;
             }
