@@ -9,9 +9,9 @@ function AboutMeInfo({ label, info } : AboutMeProps) {
     return (
         <div className="about-me__infos__box flex flex-row gap-15">
             <p className="about-me__infos__box__label">
-                {label + "  ⁄   "}
+                {label} /
             </p>
-            <p className="about-me__infos__box__label">
+            <p className="about-me__infos__box__info">
                 {info}
             </p>
         </div>
@@ -27,15 +27,15 @@ const infos = {
 
 export default function AboutMe() {
     return (
-        <div className="col-span-2 flex flex-col about-me home-page__box">
+        <div className="col-span-2 flex flex-col gap-3 about-me home-page__box">
             <h1 className="about-me__title">
                 About me
             </h1>
-            
-            <div className="about-me__infos">
-                <AboutMeInfo label={"Full name "} info={infos.name} />
-                <AboutMeInfo label={"Title "} info={infos.title} />
-                <AboutMeInfo label={"Location "} info={infos.location} />
+
+            <div className="about-me__infos flex flex-col gap-1">
+                <AboutMeInfo label={"Name"} info={infos.name} />
+                <AboutMeInfo label={"Title"} info={infos.title} />
+                <AboutMeInfo label={"Location"} info={infos.location} />
             </div>
         </div>
     )
