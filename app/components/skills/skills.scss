@@ -17,9 +17,10 @@
         width: 95vh;
 
         &__header {
-            content: "x";
             text-align: right;
             font-weight: 500;
+            cursor: pointer;
+            z-index: 9999;
         }
 
         &__details {
@@ -43,6 +44,12 @@
 
         &__popup {
             @include mixin.basic-popup-style-mobile;
+
+            &__header {
+                &--content {
+                    font-size: 35px;
+                }
+            }
 
             &__details {
                 &--title {
