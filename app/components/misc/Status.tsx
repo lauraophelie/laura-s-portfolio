@@ -1,6 +1,6 @@
 import "./style.scss";
 
-const cvLink = "https://drive.google.com/file/d/1S9BO-YOGNeLK1tYx9dCj3etMu5en2quh/view?usp=sharing";
+const cvLink = "https://drive.google.com/file/d/1es0cg-vDuCU__jG2MCFyG9vEKrQrx6ta/view?usp=sharing";
 
 function GetCVButton() {
     return (
